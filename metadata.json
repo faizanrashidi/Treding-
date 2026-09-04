@@ -1,0 +1,6 @@
+{
+  "name": "TRADEAI",
+  "description": "Universal Trading Screen Analyzer powered by OCR, Computer Vision, technical indicators, market data cross-checking, and disciplined risk evaluation.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

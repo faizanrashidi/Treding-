@@ -1,0 +1,64 @@
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <!-- Center safe zone: 21 to 87 (66x66) -->
+    <!-- Candle 1: Bearish Red/Coral Candle -->
+    <path
+        android:pathData="M35,38 L35,70"
+        android:strokeWidth="2"
+        android:strokeColor="#FF5252"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M31,44 H39 V62 H31 Z"
+        android:fillColor="#FF5252" />
+
+    <!-- Candle 2: Small indecision candle -->
+    <path
+        android:pathData="M47,40 L47,68"
+        android:strokeWidth="1.5"
+        android:strokeColor="#FFD166"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M44,52 H50 V57 H44 Z"
+        android:fillColor="#FFD166" />
+
+    <!-- Candle 3: Bullish Green Breakout Candle -->
+    <path
+        android:pathData="M59,30 L59,76"
+        android:strokeWidth="2"
+        android:strokeColor="#00E676"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M55,36 H63 V64 H55 Z"
+        android:fillColor="#00E676" />
+
+    <!-- Candle 4: Bullish Extension Candle -->
+    <path
+        android:pathData="M71,26 L71,64"
+        android:strokeWidth="2"
+        android:strokeColor="#00E676"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M67,30 H75 V54 H67 Z"
+        android:fillColor="#00E676" />
+
+    <!-- Dynamic AI Trendline -->
+    <path
+        android:pathData="M28,68 Q44,58 52,48 T78,28"
+        android:strokeWidth="3"
+        android:strokeColor="#00F0FF"
+        android:strokeLineCap="round" />
+
+    <!-- AI Target / Crosshair Marker at top breakout -->
+    <path
+        android:pathData="M78,28 M74,28 H82 M78,24 V32"
+        android:strokeWidth="2.5"
+        android:strokeColor="#FFFFFF"
+        android:strokeLineCap="round" />
+    <path
+        android:pathData="M78,28 m-5,0 a5,5 0 1,0 10,0 a5,5 0 1,0 -10,0"
+        android:strokeWidth="1.5"
+        android:strokeColor="#FFFFFF" />
+</vector>
