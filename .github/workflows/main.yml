@@ -36,4 +36,30 @@ jobs:
           cat > key.properties <<EOF
           storeFile=release-key.jks
           storePassword=${{ secrets.KEYSTORE_PASSWORD }}
-          keyAlias=${
+          keyAlias=${{ secrets.KEY_ALIAS }}
+          keyPassword=${{ secrets.KEY_PASSWORD }}
+          EOF
+
+      - name: Build Release APK
+        run: ./gradlew assembleRelease
+
+      - name: Build Release AAB
+        run: ./gradlew bundleRelease
+
+      - name: Upload APK
+        uses: actions/upload-artifact@v4
+        with:
+          name: trade-analyzer-release-apk
+          path: app/build/outputs/apk/release/*.apk
+
+      - name: Upload AAB
+        uses: actions/upload-artifact@v4
+        with:
+          name: trade-analyzer-release-aab
+          path: app/build/outputs/bundle/release/*.aab
+
+      - name: Cleanup secrets
+        if: always()
+        run: |
+          rm -f app/release-key.jks
+          rm -f key.properties
